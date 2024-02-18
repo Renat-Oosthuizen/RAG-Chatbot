@@ -8,9 +8,9 @@ This agent has access to the following tools:
 - DocXReader allowing the agent to read Microsoft Word Documents specifically. For demonstration purposes it has been provided `UK.docsx` file containing the contents of the United Kingdom wikipedia page.
 - SimpleDirectoryReader allowing the agent to read from common unstructured file formats including `.pdf`, `.txt`, `.md` and `docx`.
 
-![Agent Answers 1.JPG](rag-chatbot/ReadMe Images/Agent Answers 1.JPG)
+![Agent Answers 1.JPG](rag-chatbot%2FReadMe%20Images%2FAgent%20Answers%201.JPG)
 
-![Agent Answers 2.JPG](rag-chatbot/ReadMe Images/Agent Answers 2.JPG)
+![Agent Answers 2.JPG](rag-chatbot%2FReadMe%20Images%2FAgent%20Answers%202.JPG)
 
 ## Setup
 
