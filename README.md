@@ -53,7 +53,7 @@ Alternatively, simply run `python rag-chatbot/main.py` in terminal.
 - This is a proof of concept. As such, the application is not stable and prone to crushing. The main issue arises due to chatbot responses being non-deterministic and the application is not always able to deal with them appropriately.
 - A further issue is that the agent does not always perform a complete search through its knowledge base. There are a number of ways this could be fixed including via further prompt engineering.
 - It is possible to modify this application to use an LLM integrated into the application or to query a locally hosted agent. I have been able to integrate this application with `mistral 8x7b` and `llama2 7b` models hosted locally via [ollama](https://ollama.com/). 
-For further documentation on ollama se [here](https://github.com/ollama/ollama). In my testing I found that stable integration with non-OpenAI models is much more limited on LlamaIndex compared to OpenAI models. 
+For further documentation on ollama see [here](https://github.com/ollama/ollama). In my testing I found that stable integration with non-OpenAI models is much more limited on LlamaIndex compared to OpenAI models. 
 Using `mistral` or `llama2` was significantly more likely to crush the application as they were both prone to selecting to use tools that did not exist.
 
 ### Using Ollama models
@@ -64,7 +64,7 @@ In this example I will use the ollama `mistral` model.
 - Add and run the following code in main.py to confirm connectivity with the model. Note: it may take around 30 seconds to receive the 1st response from the model as ollama will initiate a new session.
 ```python
 from llama_index.llms.ollama import Ollama
-llm = Ollama(model="llama2", request_timeout=30.0)
+llm = Ollama(model="mistral", request_timeout=30.0)
 resp = llm.complete("What are the different categories of starts?")
 print(resp)
 ```
