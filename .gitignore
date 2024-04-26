@@ -154,3 +154,5 @@ cython_debug/
 /rag-chatbot/uk_embeddings/
 rag-chatbot/data/notes.txt
 .idea/
+/uk_embeddings
+/varied_embeddings
